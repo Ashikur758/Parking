@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IoT based Smart Parking and Monitoring System</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ov" id="ov"></div>
+<aside id="drawer">
+  <div>
+    <div class="brand"><div class="logo" data-i="car"></div><div><b>SmartPark</b><span>Smart Parking System </span></div></div>
+    <nav><a href="#" data-v="dash" class="on"><i data-i="grid"></i>Dashboard</a><a href="#" data-v="live"><i data-i="pulse"></i>Live Monitoring</a><a href="#" data-v="hist"><i data-i="hist"></i>Vehicle History</a></nav>
+  </div>
+  
+</aside>
+
+<main>
+  <header>
+    <button class="menu" id="menu" aria-label="Open menu"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></button>
+    <div class="ttl">IoT based Smart Parking and Monitoring System<small>SmartPark Control Panel</small></div>
+    <div class="right"><button class="ib" id="theme" aria-label="Toggle theme"><i data-i="sun"></i></button>
+    <div class="me" id="me"><div class="av" style="background:#1e293b">AR</div><div class="who2"><b>Ashikur Rahman</b><span>Administrator</span></div><div class="dd" id="dd" hidden><button data-a="theme">Switch theme</button><button data-a="out">Sign out</button></div></div></div>
+  </header>
+
+  <div class="content"><div class="inner">
+    <div class="pgrow"><h2 class="pg" id="pgT"></h2><div class="lv" id="fbCard" data-s="off" title="Firebase: not connected"><span class="dot" id="ldot"></span><span id="ltxt">Live</span></div></div>
+    <div class="sys" data-view="dash live">
+      <div class="card sc gc gcard" id="gateCard" data-s="closed">
+        <div class="gcl">
+          <div class="gv"><svg viewBox="0 0 120 70"><rect x="2" y="60" width="30" height="7" rx="3.5" fill="var(--mut)" opacity=".5"/><rect x="8" y="24" width="16" height="40" rx="5" fill="var(--mut)"/><g class="arm"><rect x="18" y="29" width="98" height="11" rx="5.5" fill="#fff" stroke="var(--line)"/><g fill="#ef4444"><rect x="34" y="29" width="13" height="11"/><rect x="60" y="29" width="13" height="11"/><rect x="86" y="29" width="13" height="11"/></g></g><circle cx="16" cy="34" r="5" fill="var(--card)" stroke="var(--mut)" stroke-width="2"/></svg></div>
+          <div><div class="lb">Gate Control</div><div class="big" id="gate">Closed</div><div class="sub" id="gateSub">Ready</div>
+</div>
+        </div>
+        <div class="gcr">
+          <div class="gb gate-buttons">
+            <button class="bgo" id="openGate" type="button">Open Gate</button>
+            <button class="pill" id="closeGate" type="button">Close Gate</button>
+          </div>
+          <div class="warn" id="gwarn" hidden></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="stats" id="stats" data-view="dash"></section>
+
+    <section class="g2" data-view="dash live">
+      <div class="card">
+        <div class="hd"><h3>Parking Slots</h3><button class="pill" id="slotsAll">View All</button></div>
+        <div class="zones" id="zones"></div>
+        <div class="legend"><span><b style="background:#22c55e"></b>Available</span><span><b style="background:#ef4444"></b>Occupied</span><span><b style="background:#facc15"></b>Reserved</span><span><b style="background:#3b82f6"></b>Selected</span></div>
+      </div>
+      
+    </section>
+
+
+
+    <section class="card" data-view="dash">
+      <div class="hd"><h3>Vehicle Access</h3><span class="pill">Live</span></div>
+      <div class="tw"><table style="min-width:420px"><thead><tr><th>Date</th><th>Entry Time</th><th>Exit Time</th><th>Parking Time</th></tr></thead><tbody id="va"></tbody></table></div>
+    </section>
+    <section class="card" data-view="hist">
+      <div class="hd"><h3>Vehicle History (Date Wise)</h3><div class="chips" id="chips"></div></div>
+      <div class="fbar"><div><label for="hf">From date</label><input type="date" id="hf"></div><div><label for="ht">To date</label><input type="date" id="ht"></div><div class="fq chips" id="dq"></div></div>
+      <div class="hsum" id="hsum"></div>
+      <div class="tw"><table><thead><tr><th>Date</th><th>Vehicle No</th><th>Zone</th><th>Entry Time</th><th>Exit Time</th><th>Parking Time</th></tr></thead><tbody id="tb"></tbody></table></div>
+    </section>
+    <footer>Firebase Realtime Database </footer>
+  </div></div>
+</main>
+<div class="toast" id="toast"></div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

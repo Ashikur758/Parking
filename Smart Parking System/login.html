@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartPark Login</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+<!-- Background Slideshow -->
+<div class="bg-slideshow">
+
+    <img id="bg1" class="bg-image active" alt="Parking Background">
+
+    <img id="bg2" class="bg-image" alt="Parking Background">
+
+</div>
+
+<!-- Dark Overlay -->
+<div class="bg-overlay"></div>
+
+
+<!-- Login Card -->
+<div class="box" id="box">
+
+    <div class="logo">
+
+        <svg viewBox="0 0 24 24">
+            <path d="M5 17h14M3 13l2-6h14l2 6v4H3z"/>
+            <circle cx="7.5" cy="17" r="1.5"/>
+            <circle cx="16.5" cy="17" r="1.5"/>
+        </svg>
+
+    </div>
+
+    <h1>
+        IoT based Smart Parking and Monitoring System
+    </h1>
+
+    <div class="sub">Login</div>
+
+
+    <form id="f" autocomplete="on">
+
+        <label for="u">User Name</label>
+
+        <input
+                id="u"
+                name="username"
+                type="text"
+                placeholder="Enter user name"
+                autocomplete="username"
+                required
+                autofocus
+        >
+
+
+        <label for="p">Password</label>
+
+        <div class="field">
+
+            <input
+                    id="p"
+                    name="password"
+                    type="password"
+                    placeholder="Enter password"
+                    autocomplete="current-password"
+                    required
+            >
+
+            <button type="button" class="eye" id="eye">
+                Show
+            </button>
+
+        </div>
+
+
+        <button type="submit" class="go">
+            Login
+        </button>
+
+        <div class="msg" id="msg" role="alert"></div>
+
+    </form>
+
+</div>
+
+
+<script src="login.js"></script>
+
+</body>
+</html>

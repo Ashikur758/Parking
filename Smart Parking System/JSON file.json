@@ -1,0 +1,82 @@
+{
+  "gate": {
+    "open": false
+  },
+  "slots": {
+    "A01": {
+      "occupied": false,
+      "entryDate": "",
+      "entryTime": "",
+      "entryEpoch": 0,
+      "exitDate": "",
+      "exitTime": "",
+      "historyKey": ""
+    },
+    "A02": {
+      "occupied": false,
+      "entryDate": "",
+      "entryTime": "",
+      "entryEpoch": 0,
+      "exitDate": "",
+      "exitTime": "",
+      "historyKey": ""
+    },
+    "A03": {
+      "occupied": false,
+      "entryDate": "",
+      "entryTime": "",
+      "entryEpoch": 0,
+      "exitDate": "",
+      "exitTime": "",
+      "historyKey": ""
+    },
+    "A04": {
+      "occupied": false,
+      "entryDate": "",
+      "entryTime": "",
+      "entryEpoch": 0,
+      "exitDate": "",
+      "exitTime": "",
+      "historyKey": ""
+    },
+    "B01": {
+      "occupied": false,
+      "entryDate": "",
+      "entryTime": "",
+      "entryEpoch": 0,
+      "exitDate": "",
+      "exitTime": "",
+      "historyKey": ""
+    },
+    "B02": {
+      "occupied": false,
+      "entryDate": "",
+      "entryTime": "",
+      "entryEpoch": 0,
+      "exitDate": "",
+      "exitTime": "",
+      "historyKey": ""
+    },
+    "B03": {
+      "occupied": false,
+      "entryDate": "",
+      "entryTime": "",
+      "entryEpoch": 0,
+      "exitDate": "",
+      "exitTime": "",
+      "historyKey": ""
+    },
+    "B04": {
+      "occupied": false,
+      "entryDate": "",
+      "entryTime": "",
+      "entryEpoch": 0,
+      "exitDate": "",
+      "exitTime": "",
+      "historyKey": ""
+    }
+  },
+  "status": {
+    "vehiclesInside": 0
+  }
+}
